@@ -1,4 +1,4 @@
-package contracts;
+package contracts.effects;
 
 public class SpellEffect {
 

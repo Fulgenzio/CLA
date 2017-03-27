@@ -1,114 +1,60 @@
 package contracts;
 
-public class Player {
+import java.util.List;
 
-    private String name;
+public class Player extends NPC {
 
-    private String race;
+    private int freeStatPts;
 
-    private String job;
+    private int freeSkillPts;
 
-    private int level;
+    private int freeFeatPts;
 
-    private int experience;
+    private int freeSpellPts;
 
-    private int maxHealth;
+    private Magic magic;
 
-    private int health;
+    private Inventory inventory;
 
-    private int freeStats;
+    private long maxWeight;
 
-    private int freeSkill;
-
-    private int freeFeats;
-
-    private int freeSpell;
-
-    public String getName() {
-        return name;
+    public int getFreeStatPts() {
+        return freeStatPts;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFreeStatPts(int freeStatPts) {
+        this.freeStatPts = freeStatPts;
     }
 
-    public String getRace() {
-        return race;
+    public int getFreeSkillPts() {
+        return freeSkillPts;
     }
 
-    public void setRace(String race) {
-        this.race = race;
+    public void setFreeSkillPts(int freeSkillPts) {
+        this.freeSkillPts = freeSkillPts;
     }
 
-    public String getJob() {
-        return job;
+    public int getFreeFeatPts() {
+        return freeFeatPts;
     }
 
-    public void setJob(String job) {
-        this.job = job;
+    public void setFreeFeatPts(int freeFeatPts) {
+        this.freeFeatPts = freeFeatPts;
     }
 
-    public int getLevel() {
-        return level;
+    public int getFreeSpellPts() {
+        return freeSpellPts;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
+    public void setFreeSpellPts(int freeSpellPts) {
+        this.freeSpellPts = freeSpellPts;
     }
 
-    public int getExperience() {
-        return experience;
+    public long getMaxWeight() {
+        return maxWeight;
     }
 
-    public void setExperience(int experience) {
-        this.experience = experience;
-    }
-
-    public int getMaxHealth() {
-        return maxHealth;
-    }
-
-    public void setMaxHealth(int maxHealth) {
-        this.maxHealth = maxHealth;
-    }
-
-    public int getHealth() {
-        return health;
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
-    public int getFreeStats() {
-        return freeStats;
-    }
-
-    public void setFreeStats(int freeStats) {
-        this.freeStats = freeStats;
-    }
-
-    public int getFreeSkill() {
-        return freeSkill;
-    }
-
-    public void setFreeSkill(int freeSkill) {
-        this.freeSkill = freeSkill;
-    }
-
-    public int getFreeFeats() {
-        return freeFeats;
-    }
-
-    public void setFreeFeats(int freeFeats) {
-        this.freeFeats = freeFeats;
-    }
-
-    public int getFreeSpell() {
-        return freeSpell;
-    }
-
-    public void setFreeSpell(int freeSpell) {
-        this.freeSpell = freeSpell;
+    public void setMaxWeight(long maxWeight) {
+        this.maxWeight = maxWeight;
     }
 }
