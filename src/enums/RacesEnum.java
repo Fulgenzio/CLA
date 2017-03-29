@@ -6,6 +6,7 @@ public enum RacesEnum {
     dwarf("Dwarf"),
     orc("Orc"),
     halfElf("Half-Elf"),
+    halfling("Halfling"),
     gnome("Gnome");
 
     private final String value;

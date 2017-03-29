@@ -1,4 +1,4 @@
 package contracts.effects.armor;
 
-public class Absorb {
+public class Absorb extends ArmorEffect{
 }
