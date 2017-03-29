@@ -7,13 +7,13 @@ import helpers.CreatorHelper;
 
 public class NpcCreator {
 
-    CreatorHelper helper = new CreatorHelper();
+    private CreatorHelper helper = new CreatorHelper();
 
     public NPC getNpc(String race, String job) throws IllegalParameterException {
 
         NPC npc = new NPC();
 
-        if (helper.checkRace(race)){
+        if (helper.checkRace(race) && helper.checkJobNpc(job)) {
 
             npc.setRace(race);
 
@@ -41,48 +41,46 @@ public class NpcCreator {
 
                 }
             }
-        }
-
-        npc.setRace(race);
 
 
-        switch (job) {
+            switch (job) {
 
-            case "Blacksmith": {
+                case "Blacksmith": {
 
-            }
-            case "Carpenter": {
+                }
+                case "Carpenter": {
 
-            }
-            case "Guard": {
+                }
+                case "Guard": {
 
-            }
-            case "Cook": {
+                }
+                case "Cook": {
 
-            }
-            case "Monk": {
+                }
+                case "Monk": {
 
-            }
-            case "Alchemist": {
+                }
+                case "Alchemist": {
 
-            }
-            case "Farmer": {
+                }
+                case "Farmer": {
 
-            }
-            case "Nobleman": {
+                }
+                case "Nobleman": {
 
-            }
-            case "Soldier": {
+                }
+                case "Soldier": {
 
-            }
-            case "Stable hand": {
+                }
+                case "Stable hand": {
 
-            }
-            case "Doctor": {
+                }
+                case "Doctor": {
 
-            }
-            case "Tanner": {
+                }
+                case "Tanner": {
 
+                }
             }
         }
 
