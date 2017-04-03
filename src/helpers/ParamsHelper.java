@@ -1,10 +1,12 @@
 package helpers;
 
+import enums.CharacterTypeEnum;
+import enums.JobsEnum;
 import enums.NpcJobsEnum;
 import enums.RacesEnum;
 import exceptions.IllegalParameterException;
 
-public class CreatorHelper {
+public class ParamsHelper {
 
     public boolean checkRace(String race) throws IllegalParameterException {
         if (race.equals(RacesEnum.dwarf.getValue()) ||
@@ -38,5 +40,32 @@ public class CreatorHelper {
             throw new IllegalParameterException(job);
         }
 
+    }
+
+    public boolean checkJobEnemy(String job) throws IllegalParameterException {
+        if (job.equals(JobsEnum.barbarian.getValue()) ||
+        job.equals(JobsEnum.druid.getValue()) ||
+        job.equals(JobsEnum.magician.getValue()) ||
+        job.equals(JobsEnum.monk.getValue()) ||
+        job.equals(JobsEnum.paladin.getValue()) ||
+        job.equals(JobsEnum.priest.getValue()) ||
+        job.equals(JobsEnum.ranger.getValue()) ||
+        job.equals(JobsEnum.sorcerer.getValue()) ||
+        job.equals(JobsEnum.thief.getValue()) ||
+        job.equals(JobsEnum.warrior.getValue())) {
+            return true;
+        } else {
+            throw new IllegalParameterException(job);
+        }
+    }
+
+    public boolean checkCharType(String baseChar) throws IllegalParameterException {
+        if (baseChar.equals(CharacterTypeEnum.enemy.getValue()) ||
+            baseChar.equals(CharacterTypeEnum.npc.getValue()) ||
+            baseChar.equals(CharacterTypeEnum.player.getValue())) {
+            return true;
+        } else {
+            throw new IllegalParameterException(baseChar);
+        }
     }
 }
