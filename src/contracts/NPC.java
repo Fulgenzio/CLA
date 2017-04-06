@@ -42,4 +42,13 @@ public class NPC extends Character {
         this.carriedWeight = carriedWeight;
     }
 
+    @Override
+    public String toString() {
+        return "NPC{" +
+                "job='" + job + '\'' +
+                ", magic=" + magic +
+                ", inventory=" + inventory +
+                ", carriedWeight=" + carriedWeight +
+                '}';
+    }
 }

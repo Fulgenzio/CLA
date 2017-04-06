@@ -23,6 +23,7 @@ public class NpcCreator {
         if (paramsHelper.checkRace(race) && paramsHelper.checkJobNpc(job)) {
 
             npc.setRace(race);
+            npc.setJob(job);
 
             switch (job) {
 
@@ -33,7 +34,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(10);
                     npcStats.setWisdom(12);
                     npcStats.setCharisma(10);
-
+                    break;
                 }
                 case "Carpenter": {
                     npcStats.setStrength(12);
@@ -42,6 +43,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(14);
                     npcStats.setWisdom(12);
                     npcStats.setCharisma(10);
+                    break;
                 }
                 case "Guard": {
                     npcStats.setStrength(14);
@@ -50,6 +52,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(12);
                     npcStats.setWisdom(10);
                     npcStats.setCharisma(14);
+                    break;
                 }
                 case "Cook": {
                     npcStats.setStrength(10);
@@ -58,6 +61,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(12);
                     npcStats.setWisdom(10);
                     npcStats.setCharisma(12);
+                    break;
                 }
                 case "Monk": {
                     npcStats.setStrength(10);
@@ -66,6 +70,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(12);
                     npcStats.setWisdom(14);
                     npcStats.setCharisma(14);
+                    break;
                 }
                 case "Alchemist": {
                     npcStats.setStrength(10);
@@ -74,6 +79,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(14);
                     npcStats.setWisdom(14);
                     npcStats.setCharisma(10);
+                    break;
                 }
                 case "Farmer": {
                     npcStats.setStrength(14);
@@ -82,6 +88,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(10);
                     npcStats.setWisdom(12);
                     npcStats.setCharisma(10);
+                    break;
                 }
                 case "Nobleman": {
                     npcStats.setStrength(12);
@@ -90,6 +97,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(12);
                     npcStats.setWisdom(10);
                     npcStats.setCharisma(14);
+                    break;
                 }
                 case "Soldier": {
                     npcStats.setStrength(14);
@@ -98,6 +106,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(10);
                     npcStats.setWisdom(10);
                     npcStats.setCharisma(14);
+                    break;
                 }
                 case "Stable hand": {
                     npcStats.setStrength(12);
@@ -106,6 +115,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(10);
                     npcStats.setWisdom(10);
                     npcStats.setCharisma(10);
+                    break;
                 }
                 case "Doctor": {
                     npcStats.setStrength(10);
@@ -114,6 +124,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(14);
                     npcStats.setWisdom(12);
                     npcStats.setCharisma(12);
+                    break;
                 }
                 case "Tanner": {
                     npcStats.setStrength(12);
@@ -122,6 +133,7 @@ public class NpcCreator {
                     npcStats.setIntelligence(10);
                     npcStats.setWisdom(12);
                     npcStats.setCharisma(10);
+                    break;
                 }
             }
 
