@@ -1,9 +1,6 @@
 package helpers;
 
-import enums.CharacterTypeEnum;
-import enums.JobsEnum;
-import enums.NpcJobsEnum;
-import enums.RacesEnum;
+import enums.*;
 import exceptions.IllegalParameterException;
 
 public class ParamsHelper {
@@ -40,6 +37,34 @@ public class ParamsHelper {
             throw new IllegalParameterException(job);
         }
 
+    }
+
+    public boolean checkJobVendor(String job) throws IllegalParameterException {
+        if (job.equals(VendorJobsEnum.armorsmith.getValue()) ||
+        job.equals(VendorJobsEnum.bartender.getValue()) ||
+        job.equals(VendorJobsEnum.bookbinder.getValue()) ||
+        job.equals(VendorJobsEnum.bowyer.getValue()) ||
+        job.equals(VendorJobsEnum.brewer.getValue()) ||
+        job.equals(VendorJobsEnum.caravanmaster.getValue()) ||
+        job.equals(VendorJobsEnum.enchanter.getValue()) ||
+        job.equals(VendorJobsEnum.fletcher.getValue()) ||
+        job.equals(VendorJobsEnum.herbalist.getValue()) ||
+        job.equals(VendorJobsEnum.herder.getValue()) ||
+        job.equals(VendorJobsEnum.instrumentmaker.getValue()) ||
+        job.equals(VendorJobsEnum.jeweler.getValue()) ||
+        job.equals(VendorJobsEnum.merchant.getValue()) ||
+        job.equals(VendorJobsEnum.peddler.getValue()) ||
+        job.equals(VendorJobsEnum.scribe.getValue()) ||
+        job.equals(VendorJobsEnum.shoemaker.getValue()) ||
+        job.equals(VendorJobsEnum.tailor.getValue()) ||
+        job.equals(VendorJobsEnum.warbreeder.getValue()) ||
+        job.equals(VendorJobsEnum.weaponsmith.getValue()) ||
+        job.equals(VendorJobsEnum.weaver.getValue()) ||
+        job.equals(VendorJobsEnum.woodworker.getValue())) {
+            return true;
+        } else {
+            throw new IllegalParameterException(job);
+        }
     }
 
     public boolean checkJobEnemy(String job) throws IllegalParameterException {

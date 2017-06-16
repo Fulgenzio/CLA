@@ -2,5 +2,13 @@ package contracts.effects.armor;
 
 public class ArmorEffect {
 
-    private int effectId;
+    int effectId;
+
+    public int getEffectId() {
+        return effectId;
+    }
+
+    public void setEffectId(int effectId) {
+        this.effectId = effectId;
+    }
 }

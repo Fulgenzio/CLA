@@ -5,7 +5,7 @@ import contracts.Stats;
 
 public class RaceHelper {
 
-    public void setRaceModifiers(NPC npc) {
+    public NPC setRaceModifiers(NPC npc) {
         Stats stats = npc.getStats();
         int stat;
         switch (npc.getRace()) {
@@ -19,11 +19,13 @@ public class RaceHelper {
                 stats.setWisdom(stats.getWisdom() + 2);
                 stats.setConstitution(stats.getConstitution() - 2);
                 stats.setStrength(stats.getStrength() - 2);
+                break;
             }
 
             case "Half-Elf": {
                 stats.setDexterity(stats.getDexterity() + 2);
                 stats.setConstitution(stats.getConstitution() - 2);
+                break;
             }
 
             case "Dwarf": {
@@ -31,6 +33,7 @@ public class RaceHelper {
                 stats.setConstitution(stats.getConstitution() + 2);
                 stats.setCharisma(stats.getCharisma() - 2);
                 stats.setDexterity(stats.getDexterity() - 2);
+                break;
             }
 
             case "Orc": {
@@ -38,6 +41,7 @@ public class RaceHelper {
                 stats.setConstitution(stats.getConstitution() + 2);
                 stats.setCharisma(stats.getCharisma() - 2);
                 stats.setIntelligence(stats.getIntelligence() - 2);
+                break;
             }
 
             case "Halfling": {
@@ -45,6 +49,7 @@ public class RaceHelper {
                 stats.setDexterity(stats.getDexterity() + 2);
                 stats.setConstitution(stats.getConstitution() - 2);
                 stats.setIntelligence(stats.getIntelligence() - 2);
+                break;
             }
 
             case "Gnome": {
@@ -52,8 +57,10 @@ public class RaceHelper {
                 stats.setIntelligence(stats.getIntelligence() + 2);
                 stats.setStrength(stats.getStrength() - 2);
                 stats.setWisdom(stats.getWisdom() - 2);
+                break;
             }
         }
+        return npc;
 
     }
 

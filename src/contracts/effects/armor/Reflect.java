@@ -2,7 +2,7 @@ package contracts.effects.armor;
 
 import java.util.Random;
 
-public class Reflect extends ArmorEffect{
+public class Reflect extends ArmorEffect {
 
     private int reflectionPercent;
 

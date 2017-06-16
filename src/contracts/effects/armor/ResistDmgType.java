@@ -1,6 +1,6 @@
 package contracts.effects.armor;
 
-public class ResistDmgType extends ArmorEffect{
+public class ResistDmgType extends ArmorEffect {
 
     private String dmgType;
 
