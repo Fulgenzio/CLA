@@ -1,6 +1,7 @@
 import contracts.NPC;
 import creators.NpcCreator;
 import exceptions.IllegalParameterException;
+import gui.FrameOperationsEnum;
 import gui.MainFrame;
 import helpers.StatsHelper;
 
@@ -13,7 +14,7 @@ public class Main {
         NpcCreator creator = new NpcCreator();
 
         MainFrame mainFrame = new MainFrame();
-        JFrame frame = mainFrame.getFrame("test frame", 800, 600, "close");
+        JFrame frame = mainFrame.getFrame("test frame", 800, 600, FrameOperationsEnum.close);
         mainFrame.addGrid(frame, 1, 3);
 
         NPC npc = new NPC();

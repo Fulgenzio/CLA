@@ -1,13 +1,13 @@
 package gui;
-import javax.swing.JFrame;
+import javax.swing.*;
 import java.awt.*;
 
 public class MainFrame {
-    public JFrame getFrame(String title, int width, int height, String operations) {
+    public JFrame getFrame(String title, int width, int height, FrameOperationsEnum operation) {
         JFrame frame = new JFrame(title);
         frame.setSize(width, height);
         frame.setVisible(true);
-        switch (operations) {
+        switch (operation.getValue()) {
             case "close": {
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 break;
@@ -24,10 +24,13 @@ public class MainFrame {
         return frame;
     }
 
-    public JFrame addGrid(JFrame frame, int rows, int columns) {
+    public void addGrid(JFrame frame, int rows, int columns) {
         frame.setLayout(new GridLayout(rows, columns));
-        return frame;
     }
 
-    
+    public void addButtons(JFrame frame, int btnNumber) {
+        for (int i = 0; i <= btnNumber; i++) {
+            frame.add(JButton);
+        }
+    }
 }
