@@ -22,11 +22,26 @@ public enum AlignmentsEnum {
     }
 
     public static AlignmentsEnum getValue(String value) {
-        for(AlignmentsEnum e: AlignmentsEnum.values()) {
-            if(e.value.equals(value)) {
+        for (AlignmentsEnum e : AlignmentsEnum.values()) {
+            if (e.value.equals(value)) {
                 return e;
             }
         }
         return null;// not found
+    }
+
+    public static String[] getValuesArray() {
+
+        String[] valuesArray = {
+        AlignmentsEnum.lg.getValue(),
+                AlignmentsEnum.ng.getValue(),
+                AlignmentsEnum.cg.getValue(),
+                AlignmentsEnum.ln.getValue(),
+                AlignmentsEnum.nn.getValue(),
+                AlignmentsEnum.cn.getValue(),
+                AlignmentsEnum.le.getValue(),
+                AlignmentsEnum.ne.getValue(),
+                AlignmentsEnum.ce.getValue()};
+        return valuesArray;
     }
 }

@@ -1,7 +1,7 @@
 import contracts.NPC;
 import creators.NpcCreator;
+import enums.AlignmentsEnum;
 import exceptions.IllegalParameterException;
-import gui.FrameOperationsEnum;
 import gui.MainFrame;
 import helpers.StatsHelper;
 
@@ -14,12 +14,14 @@ public class Main {
         NpcCreator creator = new NpcCreator();
 
         MainFrame mainFrame = new MainFrame();
-        JFrame frame = mainFrame.getFrame("test frame", 800, 600, FrameOperationsEnum.close);
-        mainFrame.addGrid(frame, 1, 3);
+        JFrame frame = mainFrame.getFrame();
 
         NPC npc = new NPC();
         try {
             npc = creator.getNpc("Elf", "Guard");
+            String[] ss = AlignmentsEnum.getValuesArray();
+            System.out.println(ss);
+
         } catch (IllegalParameterException e) {
             e.printStackTrace();
         }

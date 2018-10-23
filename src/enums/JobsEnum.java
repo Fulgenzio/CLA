@@ -30,5 +30,19 @@ public enum JobsEnum {
         }
         return null;// not found
     }
+    public static String[] getValuesArray() {
 
+        String[] valuesArray = {
+                JobsEnum.warrior.getValue(),
+                JobsEnum.barbarian.getValue(),
+                JobsEnum.druid.getValue(),
+                JobsEnum.magician.getValue(),
+                JobsEnum.monk.getValue(),
+                JobsEnum.paladin.getValue(),
+                JobsEnum.priest.getValue(),
+                JobsEnum.ranger.getValue(),
+                JobsEnum.sorcerer.getValue(),
+                JobsEnum.thief.getValue()};
+        return valuesArray;
+    }
 }

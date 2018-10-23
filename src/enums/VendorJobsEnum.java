@@ -10,6 +10,8 @@ public enum VendorJobsEnum {
     fletcher("fletcher"),
     //bows, crossbows, slings merchant
     bowyer("bowyer"),
+    //tools, low tier weapons
+    blacksmith("blacksmith"),
     //herbs and mushrooms merchant, general ingredients
     herbalist("herbalist"),
     //general goods merchant (food, raw materials, random low tier stuff)
@@ -43,10 +45,11 @@ public enum VendorJobsEnum {
     //spirits, ale, liquor, potions (natural)
     brewer("brewer"),
     //horses, import goods, carts, ships and transports
-    caravanmaster("caravanmaster");
-
-
-
+    caravanmaster("caravanmaster"),
+    //tanned leather, parchment, furs
+    tanner("tanner"),
+    //meat, bone, tanned leather, horns and fur, hunting gear (arrows/bolts bows/crossbows) (low tier)
+    hunter("hunter");
 
     private final String value;
 
@@ -65,5 +68,35 @@ public enum VendorJobsEnum {
             }
         }
         return null;// not found
+    }
+
+    public static String[] getValuesArray() {
+
+        String[] valuesArray = {
+                VendorJobsEnum.armorsmith.getValue(),
+                VendorJobsEnum.bartender.getValue(),
+                VendorJobsEnum.bookbinder.getValue(),
+                VendorJobsEnum.bowyer.getValue(),
+                VendorJobsEnum.brewer.getValue(),
+                VendorJobsEnum.caravanmaster.getValue(),
+                VendorJobsEnum.enchanter.getValue(),
+                VendorJobsEnum.fletcher.getValue(),
+                VendorJobsEnum.herbalist.getValue(),
+                VendorJobsEnum.herder.getValue(),
+                VendorJobsEnum.instrumentmaker.getValue(),
+                VendorJobsEnum.jeweler.getValue(),
+                VendorJobsEnum.merchant.getValue(),
+                VendorJobsEnum.peddler.getValue(),
+                VendorJobsEnum.scribe.getValue(),
+                VendorJobsEnum.shoemaker.getValue(),
+                VendorJobsEnum.tailor.getValue(),
+                VendorJobsEnum.warbreeder.getValue(),
+                VendorJobsEnum.weaponsmith.getValue(),
+                VendorJobsEnum.weaver.getValue(),
+                VendorJobsEnum.woodworker.getValue(),
+                VendorJobsEnum.blacksmith.getValue(),
+                VendorJobsEnum.hunter.getValue(),
+                VendorJobsEnum.tanner.getValue()};
+        return valuesArray;
     }
 }
